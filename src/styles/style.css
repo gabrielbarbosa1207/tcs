@@ -1,0 +1,102 @@
+html{
+    background-image: linear-gradient(180deg,#000,#0a0054);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 25px 8px 55px 8px;
+}
+
+.imgOperator{
+    width: 80px;
+}
+
+.card-container {
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1); /* Soften the border color */
+    color: black;
+    margin: 10px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Add a soft box-shadow for a floating effect */
+
+    /* Linear gradient background */
+    background: linear-gradient(to bottom right, #f7f7f7, #eaeaea);
+    
+    /* Transition for smooth hover effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Adding a subtle hover effect to make the card interactive */
+.card-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Increase box shadow on hover */
+    transform: translateY(-3px); /* Small move-up effect */
+}
+
+
+.operator-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ul-div{
+    width: 250px;
+}
+
+.fixed-button{
+    display: none;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width:780px){
+    .card-container{
+        width: 430px;
+    }
+
+    .btn{
+        width: 210px;
+        margin-left: 205px;
+        margin-top: -40px;
+    }
+
+    .imgOperator{
+        width: 150px;
+    }
+
+    .operator-section{
+        display: flex;
+        align-items:start;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    h1,h2{
+        text-align: center;
+        max-width: 735px;
+        margin: 25px auto;
+    }
+
+    h2{
+        max-width: 615px;
+    }
+    
+}
